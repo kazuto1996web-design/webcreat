@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WebCreat | 中小企業のためのWeb制作会社</title>
+
+    <meta
+        name="description"
+        content="WebCreatは、中小企業の課題に寄り添い、Webサイト制作・WordPress構築・Webサイト改善・運用保守まで一貫してサポートするWeb制作会社です。"
+    >
+
+    <!-- OGP -->
+    <meta property="og:title" content="WebCreat | 中小企業のためのWeb制作会社">
+    <meta
+        property="og:description"
+        content="WebCreatは、中小企業の課題に寄り添い、成果につながるWebサイトをご提案するWeb制作会社です。"
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="本番環境URL">
+    <meta property="og:image" content="本番環境URL/img/ogp.png">
+    <meta property="og:site_name" content="WebCreat">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- favicon -->
+    <link rel="icon" href="/img/fav.svg">
+
+    <!-- Apple Touch Icon -->
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="./img/apple-touch-icon.png"
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Swiper CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Swiper JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
+        defer
+    ></script>
+
+    <!-- Original JS -->
+    <script src="./js/hamburger.js" defer></script>
+    <script src="./js/fade.js" defer></script>
+
+</head>
+    <body class="company">
+        <!-- ここからheader -->
+        <header class="header" id="header">
+            <div class="header-wrap">
+                <h1 class="header-wrap__logo">
+                    <a href="index.html">
+                        <img src="img/headerlogo.png" alt="WebCreat">
+                    </a>
+                </h1>
+                <div class="header-wrap__contact">
+                    <a href="contact.html">CONTACT</a>
+                </div>
+                <button class="header-wrap__hamburger js-hamburger" id="menuBtn" aria-label="メニューを開く">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="header-wrap__navi">
+                    <ul class="header-wrap__navi__menu">
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="service.html">SERVICE</a></li>
+                        <li><a href="archive-work.html">WORKS</a></li>
+                        <li><a href="archive-info.html">BLOG</a></li>
+                        <li><a href="company.html">COMPANY</a></li>
+                        <li class="header-wrap__navi__menu__contact">
+                            <a class="header-wrap__navi__menu__contact__btn" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+        <!-- ここからfv -->
+        <section class="top" id="top">
+            <div class="top-wrap">
+            <div class="top-wrap__body">
+                <h2 class="top-wrap__body__ttl">COMPANY</h2>
+                <h3 class="top-wrap__body__subttl">会社概要</h3>
+
+                <nav class="breadcrumb" aria-label="パンくずリスト">
+                    <ol class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                            <a href="index.html">ホーム</a>
+                        </li>
+                        <li class="breadcrumb__item" aria-current="page">
+                            COMPNY
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            </div>
+        </section>
+        <!-- ここからmessage -->
+        <section class="message" id="message" data-scroll="fade">
+            <div class="message-wrap inner">
+                <div class="message-wrap__con">
+                    <div class="message-wrap__con__txt">
+                        <div class="message-wrap__con__txt__ttl">
+                            <h2 class="section-ttl section-ttl--light">MESSAGE</h2>
+                            <h3 class="section-subttl section-subttl--blue">代表挨拶</h3>
+                        </div>
+                    </div>
+                    <div class="message-wrap__con__list">
+                        <div class="message-wrap__con__list__img">
+                            <img src="img/message.png" alt="代表挨拶">
+                            <p class="message-wrap__con__list__img__note">写真はイメージです。</p>
+                        </div>
+                        <div class="message-wrap__con__list__txt">
+                            <h4 class="message-wrap__con__list__txt__ttl">Webを通じて、企業とともに成長する。</h4>
+                            <p class="message-wrap__con__list__txt__des">私たちは、Webサイトを「作って終わり」にするのではなく、お客様の課題や目標に向き合い、その先の成果まで考えることを大切にしています。<br>
+                                企画・制作から公開後の運用や改善まで、長く相談できるパートナーとして、
+                                中小企業の成長をWebの力で支えていきます。
+                            </p>
+                            <p class="message-wrap__con__list__txt__ceo">代表取締役　<strong>架空 太郎</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ここからmember -->
+        <section class="member" id="member" data-scroll="fade">
+            <div class="member-wrap inner">
+                <div class="member-wrap__con">
+                    <div class="member-wrap__con__ttl">
+                        <div class="member-wrap__con__ttl__txt">
+                            <div class="member-wrap__con__ttl__txt__heading">
+                                <h2 class="section-ttl section-ttl--light">MEMBER</h2>
+                                <h3 class="section-subttl section-subttl--blue">社員紹介</h3>
+                            </div>
+                            <p class="member-wrap__con__ttl__txt__des">お客様の想いに寄り添い、それぞれの得意分野を活かしてWebサイトをつくっています。</p>
+                        </div>
+                    </div>
+                    <div class="member-wrap__con__list">
+                        <div class="member-wrap__con__list__item">
+                            <div class="member-wrap__con__list__item__img">
+                                <img src="img/voice01.png" alt="webディレクター">
+                                <div class="member-wrap__con__list__item__img__box">
+                                    <p class="member-wrap__con__list__item__img__box__name">架空 次郎</p>
+                                    <p class="member-wrap__con__list__item__img__box__job">Webディレクター</p>
+                                </div>
+
+                            </div>
+                            <div class="member-wrap__con__list__item__txt">
+                                <p class="member-wrap__con__list__item__txt__des">
+                                    お客様に寄り添い、想いや課題を整理し、
+                                    最適なWebサイトをご提案します。
+                                </p>
+                                <div class="member-wrap__con__list__item__txt__role">
+                                    <p class="member-wrap__con__list__item__txt__role__ttl">ROLE</p>
+                                    <p class="member-wrap__con__list__item__txt__role__note">打ち合わせ・課題整理・サイト設計</p>
+                                </div>
+                                <div class="member-wrap__con__list__item__txt__mind">
+                                    <p class="member-wrap__con__list__item__txt__mind__ttl">MIND</p>
+                                    <p class="member-wrap__con__list__item__txt__mind__note">お客様と一緒に考えることを大切にする。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-wrap__con__list__item">
+                            <div class="member-wrap__con__list__item__img">
+                                <img src="img/voice02.png" alt="webデザイナー">
+                                <div class="member-wrap__con__list__item__img__box">
+                                    <p class="member-wrap__con__list__item__img__box__name">架空 花子</p>
+                                    <p class="member-wrap__con__list__item__img__box__job">Webデザイナー</p>
+                                </div>
+
+                            </div>
+                            <div class="member-wrap__con__list__item__txt">
+                                <p class="member-wrap__con__list__item__txt__des">
+                                    企業の魅力や個性を活かし、伝わりやすく使いやすいデザインをご提案します。
+                                </p>
+                                <div class="member-wrap__con__list__item__txt__role">
+                                    <p class="member-wrap__con__list__item__txt__role__ttl">ROLE</p>
+                                    <p class="member-wrap__con__list__item__txt__role__note">Webデザイン・UI設計</p>
+                                </div>
+                                <div class="member-wrap__con__list__item__txt__mind">
+                                    <p class="member-wrap__con__list__item__txt__mind__ttl">MIND</p>
+                                    <p class="member-wrap__con__list__item__txt__mind__note">伝わりやすさと使いやすさを大切にする。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-wrap__con__list__item">
+                            <div class="member-wrap__con__list__item__img">
+                                <img src="img/voice03.png" alt="webコーダー">
+                                <div class="member-wrap__con__list__item__img__box">
+                                    <p class="member-wrap__con__list__item__img__box__name">架空 美咲</p>
+                                    <p class="member-wrap__con__list__item__img__box__job">Webコーダー</p>
+                                </div>
+
+                            </div>
+                            <div class="member-wrap__con__list__item__txt">
+                                <p class="member-wrap__con__list__item__txt__des">
+                                    お客様に寄り添い、想いや課題を整理しながら、最適なWebサイトをご提案します。
+                                </p>
+                                <div class="member-wrap__con__list__item__txt__role">
+                                    <p class="member-wrap__con__list__item__txt__role__ttl">ROLE</p>
+                                    <p class="member-wrap__con__list__item__txt__role__note">コーディング・WordPress構築</p>
+                                </div>
+                                <div class="member-wrap__con__list__item__txt__mind">
+                                    <p class="member-wrap__con__list__item__txt__mind__ttl">MIND</p>
+                                    <p class="member-wrap__con__list__item__txt__mind__note">更新しやすく、長く使えるサイトをつくる。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-wrap__con__list__item">
+                            <div class="member-wrap__con__list__item__img">
+                                <img src="img/voice04.png" alt="webディレクター">
+                                <div class="member-wrap__con__list__item__img__box">
+                                    <p class="member-wrap__con__list__item__img__box__name">架空 一郎</p>
+                                    <p class="member-wrap__con__list__item__img__box__job">Webマーケター</p>
+                                </div>
+
+                            </div>
+                            <div class="member-wrap__con__list__item__txt">
+                                <p class="member-wrap__con__list__item__txt__des">
+                                    お客様との対話を大切にし、想いや課題に寄り添ったWebサイトをご提案します。
+                                </p>
+                                <div class="member-wrap__con__list__item__txt__role">
+                                    <p class="member-wrap__con__list__item__txt__role__ttl">ROLE</p>
+                                    <p class="member-wrap__con__list__item__txt__role__note">アクセス分析・運用・改善提案</p>
+                                </div>
+                                <div class="member-wrap__con__list__item__txt__mind">
+                                    <p class="member-wrap__con__list__item__txt__mind__ttl">MIND</p>
+                                    <p class="member-wrap__con__list__item__txt__mind__note">公開後の成果まで考え、継続的に改善する。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p class="member-wrap__con__note">※掲載している写真はイメージです。実際の社員・職場を撮影したものではありません。</p>
+                </div>
+            </div>
+
+        </section>
+        <!-- COMPANY PROFILE -->
+        <section class="company" id="company" data-scroll="fade">
+            <div class="company-wrap inner">
+                <div class="company-wrap__con">
+                    <div class="company-wrap__con__txt">
+                        <div class="company-wrap__con__txt__ttl">
+                            <h2 class="section-ttl section-ttl--light">COMPANY <br>PROFILE</h2>
+                            <h3 class="section-subttl section-subttl--blue">会社概要</h3>
+                        </div>
+                    </div>
+                    <div class="company-wrap__con__list">
+                        <dl class="company-wrap__con__list__item">
+                            <dt>会社名</dt>
+                            <dd>株式会社Web Create</dd>
+                        </dl>
+                        <dl class="company-wrap__con__list__item">
+                            <dt>代表者</dt>
+                            <dd>代表取締役　架空 太郎</dd>
+                        </dl>
+                        <dl class="company-wrap__con__list__item">
+                            <dt>設立</dt>
+                            <dd>2020年4月</dd>
+                        </dl>
+                        <dl class="company-wrap__con__list__item">
+                            <dt>所在地</dt>
+                            <dd>大阪府〇〇区〇〇 1-2-3</dd>
+                        </dl>
+                        <dl class="company-wrap__con__list__item">
+                            <dt>事業内容</dt>
+                            <dd>Webサイト制作／WordPress構築／<br>
+                                Webサイト運用・保守／Webサイト改善</dd>
+                        </dl>
+                        <dl class="company-wrap__con__list__item">
+                            <dt>電話番号</dt>
+                            <dd><a href="tel:06XXXXXXXX">06-XXXX-XXXX</a></dd>
+                        </dl>
+                        <dl class="company-wrap__con__list__item">
+                            <dt>メール</dt>
+                            <dd><a href="mailto:info@example.jp">info@example.jp</a></dd>
+                        </dl>
+                        <dl class="company-wrap__con__list__item">
+                            <dt>取引銀行</dt>
+                            <dd>〇〇銀行 〇〇支店</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map" id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26240.77834367619!2d135.47786098333268!3d34.70272589856249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e692f6c597ad%3A0x229707b075452dc5!2z5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy6!5e0!3m2!1sja!2sjp!4v1788474460350!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+        </section>
+        <!-- ここからcontact -->
+        <section class="contact" id="contact">
+                <div class="contact-wrap inner">
+                    <div class="contact-wrap__con">
+                        <div class="contact-wrap__con__ttl">
+                            <div class="contact-wrap__con__ttl__txt">
+                                <div class="contact-wrap__con__ttl__txt__heading">
+                                    <h2 class="section-ttl section-ttl--soft">CONTACT</h2>
+                                    <h3 class="section-subttl section-subttl--white">お問い合わせ </h3>
+                                </div>
+                                <p class="contact-wrap__con__ttl__txt__des">Webサイトについて、まずはお気軽にご相談ください。</p>
+                            </div>
+                        </div>
+                        <div class="contact-wrap__con__list">
+                            <a href="contact.html">
+                                <div class="contact-wrap__con__list__item">
+                                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                    <h4 class="contact-wrap__con__list__item__ttl">無料相談・お問い合わせ</h4>
+                                </div>
+                                <p class="contact-wrap__con__list__des">何から始めればいいかわからない」という段階でも大丈夫です。<br>
+                                    目的やお悩みを伺いながら、最適な方法をご提案します。</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        </main>
+        <!-- これからfooter -->
+        <footer class="footer" id="footer">
+            <div class="footer-wrap inner02">
+                <div class="footer-wrap__con">
+                    <div class="footer-wrap__con__brand">
+                        <div class="footer-wrap__con__brand__logo">
+                            <a href="index.html">
+                                <img src="img/footerlogo.png" alt="WebCreat">
+                            </a>
+                        </div>
+                        <p class="footer-wrap__con__brand__ttl">Webを通じて、企業とともに成長する。</p>
+                        <div class="footer-wrap__con__brand__sns">
+
+                            <a
+                                href="https://www.instagram.com/"
+                                class="footer-wrap__con__brand__sns__link"
+                                aria-label="Instagram"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a
+                                href="https://www.facebook.com/"
+                                class="footer-wrap__con__brand__sns__link"
+                                aria-label="Facebook"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="footer-wrap__con__item">
+                        <nav class="footer-wrap__con__item__navi">
+                            <ul class="footer-wrap__con__item__navi__menu">
+                                <li><a href="about.html">ABOUT</a></li>
+                                <li><a href="service.html">SERVICE</a></li>
+                                <li><a href="archive-work.html">WORKS</a></li>
+                                <li><a href="archive-info.html">BLOG</a></li>
+                                <li><a href="company.html">COMPANY</a></li>
+                            </ul>
+                        </nav>
+                        <div class="footer-wrap__con__item__btn">
+                            <div class="footer-wrap__con__box">
+                                <a  class="btn03" href="archive-work.html">制作実績
+                                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="footer-wrap__con__box">
+                                <a class="btn02" href="contact.html">無料相談
+                                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer-wrap__small">
+                    <a href="privacypolicy.html">プライバシーポリシー</a>
+                    <small>© 2026 Web Create</small>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

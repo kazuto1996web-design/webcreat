@@ -1,0 +1,309 @@
+@use "../global" as *;
+
+body.post-type-archive-work {
+
+  // NEWS・BLOG一覧
+  .work01 {
+    background-color: #EBEFF4;
+    &-wrap {
+      &__con {
+
+        // カテゴリー
+        &__category {
+          display: flex;
+          align-items: flex-start;
+
+          gap: clamp(0.938rem, 0.71rem + 1.14vw, 1.563rem);
+
+          padding-bottom: 1.5rem;
+          border-bottom: 1px solid rgba($color-black, 0.2);
+
+          // CATEGORY
+          &__ttl {
+            flex-shrink: 0;
+
+            margin: 0;
+
+            color: $color-black;
+            font-size: clamp(0.75rem, 0.705rem + 0.23vw, 0.875rem);
+            font-weight: 500;
+            line-height: 1.8;
+          }
+
+          // カテゴリー一覧
+          &__list {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            gap: 0.75rem;
+
+            margin: 0;
+            padding: 0;
+
+            list-style: none;
+
+            li {
+              flex: 0 0 auto;
+              margin: 0;
+              padding: 0;
+
+              line-height: 1;
+            }
+
+            // PC
+            li:nth-child(1) {
+              order: 1;
+            }
+
+            li:nth-child(2) {
+              order: 2;
+            }
+
+            li:nth-child(3) {
+              order: 3;
+            }
+
+            li:nth-child(4) {
+              order: 4;
+            }
+
+            li:nth-child(5) {
+              order: 5;
+            }
+
+            // tablet
+            @include mq(tab) {
+
+              // 改行用
+              &::before {
+                content: "";
+                flex-basis: 100%;
+                height: 0;
+                order: 4;
+              }
+
+              li:nth-child(1) {
+                order: 1;
+              }
+
+              li:nth-child(2) {
+                order: 2;
+              }
+
+              li:nth-child(3) {
+                order: 3;
+              }
+
+              // リニューアル
+              li:nth-child(5) {
+                order: 5;
+              }
+
+              // 採用
+              li:nth-child(4) {
+                order: 6;
+              }
+            }
+
+            // SP
+            @include mq(sp) {
+
+              gap: 0.75rem 0.625rem;
+
+              // 1回目の改行
+              &::before {
+                content: "";
+                display: block;
+
+                flex-basis: 100%;
+                height: 0;
+
+                order: 3;
+              }
+
+              // 2回目の改行
+              &::after {
+                content: "";
+                display: block;
+
+                flex-basis: 100%;
+                height: 0;
+
+                order: 6;
+              }
+
+              // すべて
+              li:nth-child(1) {
+                order: 1;
+              }
+
+              // コーポレート
+              li:nth-child(2) {
+                order: 2;
+              }
+
+              // リニューアル
+              li:nth-child(5) {
+                order: 4;
+              }
+
+              // サービス
+              li:nth-child(3) {
+                order: 5;
+              }
+
+              // 採用
+              li:nth-child(4) {
+                order: 7;
+              }
+            }
+
+            // リンク
+            &__link {
+              display: inline-block;
+
+              padding: 0.3rem 0.625rem;
+
+              border: 1px solid rgba($color-black, 0.2);
+              background-color: $color-white;
+
+              color: $color-black;
+              font-size: 0.75rem;
+              line-height: 1;
+              text-decoration: none;
+
+              transition:
+                background-color 0.3s,
+                color 0.3s,
+                border-color 0.3s;
+
+              &.is-current {
+                border-color: $color-blue;
+                background-color: $color-blue;
+                color: $color-white;
+              }
+
+              &:hover {
+                border-color: $color-blue;
+                background-color: $color-blue;
+                color: $color-white;
+              }
+            }
+          }
+        }
+
+
+        // 制作実績一覧
+        &__list {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: clamp(1.875rem, 1.648rem + 1.14vw, 2.5rem);
+          margin-top: clamp(1.875rem, 1.648rem + 1.14vw, 2.5rem);
+
+          // タブレット
+          @include mq(pc) {
+            grid-template-columns: repeat(2, 1fr);
+
+            // sp
+            @include mq(tab) {
+              grid-template-columns: repeat(1, 1fr);
+            }
+          }
+          &__item {
+            width: 100%;
+            // max-width: 350px;
+            a {
+              display: block;
+              color: $color-black;
+            }
+            &__img {
+              width: 100%;
+              img {
+                @include img-full;
+              }
+            }
+            &__ttl {
+              margin-top: .7rem;
+              margin-bottom: .7rem;
+              font-size: clamp(1rem, 0.909rem + 0.45vw, 1.25rem);
+            }
+            &__name {
+              font-size: $font-size-body;
+            }
+            &__site {
+              background-color: $color-blue;
+              color: $color-white;
+              width: fit-content;
+              padding: .2rem;
+              font-weight: $font-size-body;
+              margin-top: .2rem;
+            }
+          }
+        }
+
+
+
+        // ページネーション
+        .pagination {
+          margin-top: 1.5rem;
+
+          // ページ番号一覧
+          &__list {
+            @include flex-align-center;
+
+            justify-content: center;
+            gap: 0.5rem;
+
+            margin: 0;
+            padding: 0;
+
+            list-style: none;
+          }
+
+          &__item {
+            flex-shrink: 0;
+          }
+
+          // ページリンク
+          &__link {
+            @include flex-center-i;
+
+            width: 2rem;
+            height: 2rem;
+
+            border-radius: 50%;
+            background-color: $color-white;
+
+            color: $color-black;
+            font-size: 0.75rem;
+            text-decoration: none;
+
+            transition:
+              background-color 0.3s,
+              color 0.3s;
+
+            // 現在のページ
+            &.is-current {
+              background-color: $color-blue;
+              color: $color-white;
+            }
+
+            // ホバー
+            &:hover {
+              background-color: $color-blue;
+              color: $color-white;
+            }
+
+            // 前・次
+            &--prev,
+            &--next {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

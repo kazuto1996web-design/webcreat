@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WebCreat | 中小企業のためのWeb制作会社</title>
+
+    <meta
+        name="description"
+        content="WebCreatは、中小企業の課題に寄り添い、Webサイト制作・WordPress構築・Webサイト改善・運用保守まで一貫してサポートするWeb制作会社です。"
+    >
+
+    <!-- OGP -->
+    <meta property="og:title" content="WebCreat | 中小企業のためのWeb制作会社">
+    <meta
+        property="og:description"
+        content="WebCreatは、中小企業の課題に寄り添い、成果につながるWebサイトをご提案するWeb制作会社です。"
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="本番環境URL">
+    <meta property="og:image" content="本番環境URL/img/ogp.png">
+    <meta property="og:site_name" content="WebCreat">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- favicon -->
+    <link rel="icon" href="/img/fav.svg">
+
+    <!-- Apple Touch Icon -->
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="./img/apple-touch-icon.png"
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Swiper CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Swiper JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
+        defer
+    ></script>
+
+    <!-- Original JS -->
+    <script src="./js/hamburger.js" defer></script>
+    <script src="./js/fade.js" defer></script>
+
+</head>
+<body class="post-type-archive-info">
+    <!-- ここからheader -->
+    <header class="header" id="header">
+        <div class="header-wrap">
+            <h1 class="header-wrap__logo">
+                <a href="index.html">
+                    <img src="img/headerlogo.png" alt="WebCreat">
+                </a>
+            </h1>
+            <div class="header-wrap__contact">
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <button class="header-wrap__hamburger js-hamburger" id="menuBtn" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="header-wrap__navi">
+                <ul class="header-wrap__navi__menu">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="archive-work.html">WORKS</a></li>
+                    <li><a href="archive-info.html">BLOG</a></li>
+                    <li><a href="company.html">COMPANY</a></li>
+                    <li class="header-wrap__navi__menu__contact">
+                        <a class="header-wrap__navi__menu__contact__btn" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <!-- ここからfv -->
+    <section class="top" id="top">
+        <div class="top-wrap">
+        <div class="top-wrap__body">
+            <h2 class="top-wrap__body__ttl">BLOG/NEWS</h2>
+            <h3 class="top-wrap__body__subttl">お役立ち情報・お知らせ</h3>
+
+            <nav class="breadcrumb" aria-label="パンくずリスト">
+                <ol class="breadcrumb__list">
+                    <li class="breadcrumb__item">
+                        <a href="index.html">ホーム</a>
+                    </li>
+                    <li class="breadcrumb__item" aria-current="page">
+                        BLOG/NEWS
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        </div>
+    </section>
+    <!-- ここからinfo-->
+    <section class="news" id="news" data-scroll="fade">
+        <div class="news-wrap inner">
+            <div class="news-wrap__con">
+
+                <!-- カテゴリー -->
+                <nav class="news-wrap__con__category" aria-label="カテゴリー">
+                    <p class="news-wrap__con__category__ttl">CATEGORY</p>
+
+                    <ul class="news-wrap__con__category__list">
+                        <li>
+                            <a href="#" class="news-wrap__con__category__list__link is-current">
+                                すべて
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="news-wrap__con__category__list__link">
+                                BLOG
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="single.html" class="news-wrap__con__category__list__link">
+                                NEWS
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+                <!-- 記事一覧 -->
+                <div class="news-wrap__con__list">
+
+                    <a href="single.html">
+                        <div class="news-wrap__con__list__item">
+
+                            <div class="news-wrap__con__list__item__img">
+                                <img src="img/news.png" alt="夏季休暇">
+                            </div>
+
+                            <div class="news-wrap__con__list__item__box">
+
+                                <div class="news-wrap__con__list__item__box__txt">
+                                    <p class="news-wrap__con__list__item__box__txt__news">
+                                        NEWS
+                                    </p>
+
+                                    <time datetime="2026-08-20">
+                                        2026.08.20
+                                    </time>
+                                </div>
+
+                                <p class="news-wrap__con__list__item__box__ttl">
+                                    夏季休暇のお知らせ
+                                </p>
+
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a href="#">
+                        <div class="news-wrap__con__list__item">
+
+                            <div class="news-wrap__con__list__item__img">
+                                <img src="img/wordpress.png" alt="ワードプレス">
+                            </div>
+
+                            <div class="news-wrap__con__list__item__box">
+
+                                <div class="news-wrap__con__list__item__box__txt">
+                                    <p class="news-wrap__con__list__item__box__txt__blog">
+                                        BLOG
+                                    </p>
+
+                                    <time datetime="2026-08-20">
+                                        2026.08.20
+                                    </time>
+                                </div>
+
+                                <p class="news-wrap__con__list__item__box__ttl">
+                                    WordPressで更新しやすいサイトを作るメリット
+                                </p>
+
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="news-wrap__con__list__item">
+
+                            <div class="news-wrap__con__list__item__img">
+                                <img src="img/wordpress.png" alt="ワードプレス">
+                            </div>
+
+                            <div class="news-wrap__con__list__item__box">
+
+                                <div class="news-wrap__con__list__item__box__txt">
+                                    <p class="news-wrap__con__list__item__box__txt__blog">
+                                        BLOG
+                                    </p>
+
+                                    <time datetime="2026-08-20">
+                                        2026.08.20
+                                    </time>
+                                </div>
+
+                                <p class="news-wrap__con__list__item__box__ttl">
+                                    WordPressで更新しやすいサイトを作るメリット
+                                </p>
+
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="news-wrap__con__list__item">
+
+                            <div class="news-wrap__con__list__item__img">
+                                <img src="img/wordpress.png" alt="ワードプレス">
+                            </div>
+
+                            <div class="news-wrap__con__list__item__box">
+
+                                <div class="news-wrap__con__list__item__box__txt">
+                                    <p class="news-wrap__con__list__item__box__txt__blog">
+                                        BLOG
+                                    </p>
+
+                                    <time datetime="2026-08-20">
+                                        2026.08.20
+                                    </time>
+                                </div>
+
+                                <p class="news-wrap__con__list__item__box__ttl">
+                                    WordPressで更新しやすいサイトを作るメリット
+                                </p>
+
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="news-wrap__con__list__item">
+
+                            <div class="news-wrap__con__list__item__img">
+                                <img src="img/wordpress.png" alt="ワードプレス">
+                            </div>
+
+                            <div class="news-wrap__con__list__item__box">
+
+                                <div class="news-wrap__con__list__item__box__txt">
+                                    <p class="news-wrap__con__list__item__box__txt__blog">
+                                        BLOG
+                                    </p>
+
+                                    <time datetime="2026-08-20">
+                                        2026.08.20
+                                    </time>
+                                </div>
+
+                                <p class="news-wrap__con__list__item__box__ttl">
+                                    WordPressで更新しやすいサイトを作るメリット
+                                </p>
+
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+
+                <!-- ページネーション -->
+                <nav class="pagination" aria-label="ページネーション">
+                    <ul class="pagination__list">
+
+                        <li class="pagination__item">
+                            <a
+                                href="#"
+                                class="pagination__link pagination__link--prev"
+                                aria-label="前のページ"
+                            >
+                                &lt;
+                            </a>
+                        </li>
+
+                        <li class="pagination__item">
+                            <a
+                                href="#"
+                                class="pagination__link is-current"
+                                aria-current="page"
+                            >
+                                1
+                            </a>
+                        </li>
+
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">
+                                2
+                            </a>
+                        </li>
+
+                        <li class="pagination__item">
+                            <a
+                                href="#"
+                                class="pagination__link pagination__link--next"
+                                aria-label="次のページ"
+                            >
+                                &gt;
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </section>
+    <!-- ここからcontact -->
+    <section class="contact" id="contact">
+            <div class="contact-wrap inner">
+                <div class="contact-wrap__con">
+                    <div class="contact-wrap__con__ttl">
+                        <div class="contact-wrap__con__ttl__txt">
+                            <div class="contact-wrap__con__ttl__txt__heading">
+                                <h2 class="section-ttl section-ttl--soft">CONTACT</h2>
+                                <h3 class="section-subttl section-subttl--white">お問い合わせ </h3>
+                            </div>
+                            <p class="contact-wrap__con__ttl__txt__des">Webサイトについて、まずはお気軽にご相談ください。</p>
+                        </div>
+                    </div>
+                    <div class="contact-wrap__con__list">
+                        <a href="contact.html">
+                            <div class="contact-wrap__con__list__item">
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                <h4 class="contact-wrap__con__list__item__ttl">無料相談・お問い合わせ</h4>
+                            </div>
+                            <p class="contact-wrap__con__list__des">何から始めればいいかわからない」という段階でも大丈夫です。<br>
+                                目的やお悩みを伺いながら、最適な方法をご提案します。</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    </main>
+    <!-- これからfooter -->
+    <footer class="footer" id="footer">
+        <div class="footer-wrap inner02">
+            <div class="footer-wrap__con">
+                <div class="footer-wrap__con__brand">
+                    <div class="footer-wrap__con__brand__logo">
+                        <a href="index.html">
+                            <img src="img/footerlogo.png" alt="WebCreat">
+                        </a>
+                    </div>
+                    <p class="footer-wrap__con__brand__ttl">Webを通じて、企業とともに成長する。</p>
+                    <div class="footer-wrap__con__brand__sns">
+
+                        <a
+                            href="https://www.instagram.com/"
+                            class="footer-wrap__con__brand__sns__link"
+                            aria-label="Instagram"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a
+                            href="https://www.facebook.com/"
+                            class="footer-wrap__con__brand__sns__link"
+                            aria-label="Facebook"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="footer-wrap__con__item">
+                    <nav class="footer-wrap__con__item__navi">
+                        <ul class="footer-wrap__con__item__navi__menu">
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="service.html">SERVICE</a></li>
+                            <li><a href="archive-work.html">WORKS</a></li>
+                            <li><a href="archive-info.html">BLOG</a></li>
+                            <li><a href="company.html">COMPANY</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-wrap__con__item__btn">
+                        <div class="footer-wrap__con__box">
+                            <a  class="btn03" href="archive-work.html">制作実績
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="footer-wrap__con__box">
+                            <a class="btn02" href="contact.html">無料相談
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-wrap__small">
+                <a href="privacypolicy.html">プライバシーポリシー</a>
+                <small>© 2026 Web Create</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WebCreat | 中小企業のためのWeb制作会社</title>
+
+    <meta
+        name="description"
+        content="WebCreatは、中小企業の課題に寄り添い、Webサイト制作・WordPress構築・Webサイト改善・運用保守まで一貫してサポートするWeb制作会社です。"
+    >
+
+    <!-- OGP -->
+    <meta property="og:title" content="WebCreat | 中小企業のためのWeb制作会社">
+    <meta
+        property="og:description"
+        content="WebCreatは、中小企業の課題に寄り添い、成果につながるWebサイトをご提案するWeb制作会社です。"
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="本番環境URL">
+    <meta property="og:image" content="本番環境URL/img/ogp.png">
+    <meta property="og:site_name" content="WebCreat">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- favicon -->
+    <link rel="icon" href="/img/fav.svg">
+
+    <!-- Apple Touch Icon -->
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="./img/apple-touch-icon.png"
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Swiper CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Swiper JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
+        defer
+    ></script>
+
+    <!-- Original JS -->
+    <script src="./js/hamburger.js" defer></script>
+    <script src="./js/fade.js" defer></script>
+    <script src="./js/faq.js" defer></script>
+
+</head>
+<body class="page-service">
+    <!-- ここからheader -->
+    <header class="header" id="header">
+        <div class="header-wrap">
+            <h1 class="header-wrap__logo">
+                <a href="index.html">
+                    <img src="img/headerlogo.png" alt="WebCreat">
+                </a>
+            </h1>
+            <div class="header-wrap__contact">
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <button class="header-wrap__hamburger js-hamburger" id="menuBtn" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="header-wrap__navi">
+                <ul class="header-wrap__navi__menu">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="archive-work.html">WORKS</a></li>
+                    <li><a href="archive-info.html">BLOG</a></li>
+                    <li><a href="company.html">COMPANY</a></li>
+                    <li class="header-wrap__navi__menu__contact">
+                        <a class="header-wrap__navi__menu__contact__btn" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <!-- ここからfv -->
+    <section class="top" id="top">
+        <div class="top-wrap">
+        <div class="top-wrap__body">
+            <h2 class="top-wrap__body__ttl">SERVICE</h2>
+            <h3 class="top-wrap__body__subttl">サービス</h3>
+
+            <nav class="breadcrumb" aria-label="パンくずリスト">
+                <ol class="breadcrumb__list">
+                    <li class="breadcrumb__item">
+                        <a href="index.html">ホーム</a>
+                    </li>
+                    <li class="breadcrumb__item" aria-current="page">
+                        SERVICE
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        </div>
+    </section>
+    <!-- ここからservice -->
+    <section class="service" id="service">
+        <div class="service-wrap inner">
+            <div class="service-wrap__con">
+
+                <div class="service-wrap__con__ttl">
+                    <div class="service-wrap__con__ttl__txt">
+                        <div class="service-wrap__con__ttl__txt__heading">
+                            <h2 class="section-ttl section-ttl--light">
+                                SERVICE
+                            </h2>
+                            <h3 class="section-subttl section-subttl--blue">
+                                サービス
+                            </h3>
+                        </div>
+
+                        <p class="service-wrap__con__ttl__txt__des">
+                            Webサイト制作からWordPress構築、運用保守、<br>
+                            サイト改善まで幅広くサポートします。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-wrap__con__list">
+
+                    <div class="service-wrap__con__list__item" data-scroll="fade">
+                        <div class="service-wrap__con__list__item__panel">
+
+                            <div class="service-wrap__con__list__item__panel__box">
+                                <h4 class="service-wrap__con__list__item__panel__box__num">
+                                    01
+                                </h4>
+
+                                <div class="service-wrap__con__list__item__panel__box__ttl">
+                                    <p class="service-wrap__con__list__item__panel__box__ttl__txt">
+                                        目的に合わせたWebサイトを。
+                                    </p>
+
+                                    <h5 class="service-wrap__con__list__item__panel__box__ttl__name">
+                                        Webサイト制作
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <p class="service-wrap__con__list__item__panel__des">
+                                会社やサービスの魅力を丁寧に整理し、目的やターゲットに合わせたWebサイトを制作します。見た目だけでなく、使いやすさやお問い合わせにつながる導線まで考えてご提案します。
+                            </p>
+
+                            <div class="service-wrap__con__list__item__panel__support">
+                                <h6 class="service-wrap__con__list__item__panel__support__ttl">
+                                    対応内容
+                                </h6>
+
+                                <div class="service-wrap__con__list__item__panel__support__list">
+
+                                    <div class="service-wrap__con__list__item__panel__support__list__row">
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            企画・設計
+                                        </span>
+
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            Webデザイン
+                                        </span>
+
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            コーディング
+                                        </span>
+                                    </div>
+
+                                    <div class="service-wrap__con__list__item__panel__support__list__row">
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            レスポンシブ対応
+                                        </span>
+
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            SEO内部対策
+                                        </span>
+
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            公開・納品
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="service-wrap__con__list__item__img">
+                            <img src="img/service1.png" alt="Webサイト制作">
+                        </div>
+                    </div>
+
+
+                    <div class="service-wrap__con__list__item" data-scroll="fade">
+                        <div class="service-wrap__con__list__item__panel">
+
+                            <div class="service-wrap__con__list__item__panel__box">
+                                <h4 class="service-wrap__con__list__item__panel__box__num">
+                                    02
+                                </h4>
+
+                                <div class="service-wrap__con__list__item__panel__box__ttl">
+                                    <p class="service-wrap__con__list__item__panel__box__ttl__txt">
+                                        IMPROVEMENT
+                                    </p>
+
+                                    <h5 class="service-wrap__con__list__item__panel__box__ttl__name">
+                                        WEBサイト改善
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <p class="service-wrap__con__list__item__panel__des">
+                                現在のWebサイトの課題を整理し、より使いやすく成果につながるサイトへ改善します。アクセス状況や導線を見直し、お問い合わせや集客につながる改善をご提案します。
+                            </p>
+
+                            <div class="service-wrap__con__list__item__panel__support">
+                                <h6 class="service-wrap__con__list__item__panel__support__ttl">
+                                    対応内容
+                                </h6>
+
+                                <div class="service-wrap__con__list__item__panel__support__list">
+
+                                    <div class="service-wrap__con__list__item__panel__support__list__row">
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            アクセス解析
+                                        </span>
+
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            UI・UX改善
+                                        </span>
+
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            導線設計
+                                        </span>
+                                    </div>
+
+                                    <div class="service-wrap__con__list__item__panel__support__list__row">
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            コンテンツ改善
+                                        </span>
+
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            SEO改善
+                                        </span>
+
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            ページ改修
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="service-wrap__con__list__item__img">
+                            <img src="img/service2.png" alt="WEBサイト改善">
+                        </div>
+                    </div>
+
+
+                    <div class="service-wrap__con__list__item" data-scroll="fade">
+                        <div class="service-wrap__con__list__item__panel">
+
+                            <div class="service-wrap__con__list__item__panel__box">
+                                <h4 class="service-wrap__con__list__item__panel__box__num">
+                                    03
+                                </h4>
+
+                                <div class="service-wrap__con__list__item__panel__box__ttl">
+                                    <p class="service-wrap__con__list__item__panel__box__ttl__txt">
+                                        WORDPRESS
+                                    </p>
+
+                                    <h5 class="service-wrap__con__list__item__panel__box__ttl__name">
+                                        WordPress構築
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <p class="service-wrap__con__list__item__panel__des">
+                                更新しやすく、運用しやすいWordPressサイトを構築します。お客様自身でお知らせやブログなどを更新できるよう、目的や運用方法に合わせて使いやすいサイトをご提案します。
+                            </p>
+
+                            <div class="service-wrap__con__list__item__panel__support">
+                                <h6 class="service-wrap__con__list__item__panel__support__ttl">
+                                    対応内容
+                                </h6>
+
+                                <div class="service-wrap__con__list__item__panel__support__list">
+
+                                    <div class="service-wrap__con__list__item__panel__support__list__row">
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            WordPress構築
+                                        </span>
+
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            テーマカスタマイズ
+                                        </span>
+
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            投稿機能
+                                        </span>
+                                    </div>
+
+                                    <div class="service-wrap__con__list__item__panel__support__list__row">
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            プラグイン導入
+                                        </span>
+
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            更新機能
+                                        </span>
+
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            セキュリティ対策
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="service-wrap__con__list__item__img">
+                            <img src="img/service3.png" alt="WordPress構築">
+                        </div>
+                    </div>
+
+
+                    <div class="service-wrap__con__list__item" data-scroll="fade">
+                        <div class="service-wrap__con__list__item__panel">
+
+                            <div class="service-wrap__con__list__item__panel__box">
+                                <h4 class="service-wrap__con__list__item__panel__box__num">
+                                    04
+                                </h4>
+
+                                <div class="service-wrap__con__list__item__panel__box__ttl">
+                                    <p class="service-wrap__con__list__item__panel__box__ttl__txt">
+                                        SUPPORT
+                                    </p>
+
+                                    <h5 class="service-wrap__con__list__item__panel__box__ttl__name">
+                                        運用・保守
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <p class="service-wrap__con__list__item__panel__des">
+                                Webサイトを安心して運用できるよう、公開後の更新や管理を継続してサポートします。セキュリティ対策やバックアップにも対応し、安定したサイト運営を支えます。
+                            </p>
+
+                            <div class="service-wrap__con__list__item__panel__support">
+                                <h6 class="service-wrap__con__list__item__panel__support__ttl">
+                                    対応内容
+                                </h6>
+
+                                <div class="service-wrap__con__list__item__panel__support__list">
+
+                                    <div class="service-wrap__con__list__item__panel__support__list__row">
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            更新サポート
+                                        </span>
+
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            セキュリティ対策
+                                        </span>
+
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            バックアップ
+                                        </span>
+                                    </div>
+
+                                    <div class="service-wrap__con__list__item__panel__support__list__row">
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            トラブル対応
+                                        </span>
+
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            改善提案
+                                        </span>
+
+                                        <span class="service-wrap__con__list__item__panel__support__list__row__item">
+                                            定期メンテナンス
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="service-wrap__con__list__item__img">
+                            <img src="img/service4.png" alt="運用・保守">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ここからfaq -->
+    <section class="faq" id="faq" data-scroll="fade">
+        <div class="faq-wrap inner">
+            <div class="faq-wrap__con">
+
+                <div class="faq-wrap__con__ttl">
+                    <div class="faq-wrap__con__ttl__txt">
+                        <div class="faq-wrap__con__ttl__txt__heading">
+                            <h2 class="section-ttl section-ttl--light">
+                                FAQ
+                            </h2>
+                            <h3 class="section-subttl section-subttl--blue">
+                                よくある質問
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-wrap__con__list">
+                    <details class="faq-wrap__con__list__item">
+                        <summary class="faq-wrap__con__list__item__question">
+                            <span class="faq-wrap__con__list__item__question__q">Q</span>
+                            <span>Webサイト制作の費用はどのくらいですか？</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </summary>
+                        <div class="faq-wrap__con__list__item__answer">
+                            サイトの規模や内容によって異なります。
+                        </div>
+                    </details>
+                    <details class="faq-wrap__con__list__item">
+                        <summary class="faq-wrap__con__list__item__question">
+                            <span class="faq-wrap__con__list__item__question__q">Q</span>
+                            <span>制作期間はどのくらいかかりますか？</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </summary>
+                        <div class="faq-wrap__con__list__item__answer">
+                            サイトの規模によりますが、通常1〜3か月程度です。ご希望の公開時期に合わせてスケジュールをご提案します。
+                        </div>
+                    </details>
+                    <details class="faq-wrap__con__list__item">
+                        <summary class="faq-wrap__con__list__item__question">
+                            <span class="faq-wrap__con__list__item__question__q">Q</span>
+                            <span>Webに詳しくなくても相談できますか？</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </summary>
+                        <div class="faq-wrap__con__list__item__answer">
+                            はい、もちろんです。専門用語をできるだけ使わず、分かりやすくご説明しながら進めていきます。
+                        </div>
+                    </details>
+                    <details class="faq-wrap__con__list__item">
+                        <summary class="faq-wrap__con__list__item__question">
+                            <span class="faq-wrap__con__list__item__question__q">Q</span>
+                            <span>WordPressで自分たちでも更新できますか？</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </summary>
+                        <div class="faq-wrap__con__list__item__answer">
+                            はい、可能です。お知らせやブログなど、お客様自身で簡単に更新できるように制作いたします。
+                        </div>
+                    </details>
+                    <details class="faq-wrap__con__list__item">
+                        <summary class="faq-wrap__con__list__item__question">
+                            <span class="faq-wrap__con__list__item__question__q">Q</span>
+                            <span>公開後の運用や保守もお願いできますか？</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </summary>
+                        <div class="faq-wrap__con__list__item__answer">
+                            はい、対応可能です。サイト公開後の更新や修正、保守なども継続してサポートいたします。
+                        </div>
+                    </details>
+                    <details class="faq-wrap__con__list__item">
+                        <summary class="faq-wrap__con__list__item__question">
+                            <span class="faq-wrap__con__list__item__question__q">Q</span>
+                            <span>既存サイトの改善だけでも相談できますか？</span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </summary>
+                        <div class="faq-wrap__con__list__item__answer">
+                            はい、可能です。現在のサイトを確認し、デザインや使いやすさなど改善点をご提案いたします。
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ここからはfaq -->
+    <!-- ここからcontact -->
+    <section class="contact" id="contact">
+            <div class="contact-wrap inner">
+                <div class="contact-wrap__con">
+                    <div class="contact-wrap__con__ttl">
+                        <div class="contact-wrap__con__ttl__txt">
+                            <div class="contact-wrap__con__ttl__txt__heading">
+                                <h2 class="section-ttl section-ttl--soft">CONTACT</h2>
+                                <h3 class="section-subttl section-subttl--white">お問い合わせ </h3>
+                            </div>
+                            <p class="contact-wrap__con__ttl__txt__des">Webサイトについて、まずはお気軽にご相談ください。</p>
+                        </div>
+                    </div>
+                    <div class="contact-wrap__con__list">
+                        <a href="contact.html">
+                            <div class="contact-wrap__con__list__item">
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                <h4 class="contact-wrap__con__list__item__ttl">無料相談・お問い合わせ</h4>
+                            </div>
+                            <p class="contact-wrap__con__list__des">何から始めればいいかわからない」という段階でも大丈夫です。<br>
+                                目的やお悩みを伺いながら、最適な方法をご提案します。</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    </main>
+    <!-- これからfooter -->
+    <footer class="footer" id="footer">
+        <div class="footer-wrap inner02">
+            <div class="footer-wrap__con">
+                <div class="footer-wrap__con__brand">
+                    <div class="footer-wrap__con__brand__logo">
+                        <a href="index.html">
+                            <img src="img/footerlogo.png" alt="WebCreat">
+                        </a>
+                    </div>
+                    <p class="footer-wrap__con__brand__ttl">Webを通じて、企業とともに成長する。</p>
+                    <div class="footer-wrap__con__brand__sns">
+
+                        <a
+                            href="https://www.instagram.com/"
+                            class="footer-wrap__con__brand__sns__link"
+                            aria-label="Instagram"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a
+                            href="https://www.facebook.com/"
+                            class="footer-wrap__con__brand__sns__link"
+                            aria-label="Facebook"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="footer-wrap__con__item">
+                    <nav class="footer-wrap__con__item__navi">
+                        <ul class="footer-wrap__con__item__navi__menu">
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="service.html">SERVICE</a></li>
+                            <li><a href="archive-work.html">WORKS</a></li>
+                            <li><a href="archive-info.html">BLOG</a></li>
+                            <li><a href="company.html">COMPANY</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-wrap__con__item__btn">
+                        <div class="footer-wrap__con__box">
+                            <a  class="btn03" href="archive-work.html">制作実績
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="footer-wrap__con__box">
+                            <a class="btn02" href="contact.html">無料相談
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-wrap__small">
+                <a href="privacypolicy.html">プライバシーポリシー</a>
+                <small>© 2026 Web Create</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

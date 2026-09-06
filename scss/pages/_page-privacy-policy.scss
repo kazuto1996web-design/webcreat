@@ -1,0 +1,76 @@
+@use "../global" as *;
+
+body.page-privacy-policy {
+
+    // プライバシーポリシー
+    .privacypolicy {
+        background-color: $color-gray-light;
+
+        &-wrap {
+            &__con {
+
+                // タイトル
+                &__ttl {
+                    &__txt {
+                        text-align: center;
+
+                        // 説明文
+                        &__des {
+                            margin-top: clamp(1.875rem, 1.42rem + 2.27vw, 3.125rem);
+                            margin-bottom: clamp(1.875rem, 1.42rem + 2.27vw, 3.125rem);
+                        }
+                    }
+                }
+
+                // ポリシー一覧
+                &__list {
+                    width: 80%;
+
+                    @include mq(tab) {
+                        width: 86%;
+                    }
+
+                    background-color: $color-white;
+                    padding: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+                    border-radius: 20px;
+                    box-shadow: 0 4px 8px rgb(0 0 0 / 0.15);
+                    margin: 0 auto clamp(1.875rem, 1.648rem + 1.14vw, 2.5rem);
+
+                    &:last-child {
+                        margin-top: 0;
+                    }
+
+                    // 各項目
+                    &__item {
+
+                        // 項目タイトル
+                        &__ttl {
+                            font-size: clamp(1.25rem, 1.159rem + 0.45vw, 1.5rem);
+                            color: $color-blue;
+                        }
+
+                        // 項目説明
+                        &__des {
+                            margin-top: .4rem;
+                            margin-bottom: 1rem;
+                            font-size: $font-size-body;
+
+                            @include mq(sp) {
+                                br {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        // 箇条書き
+                        ul {
+                            li {
+                                font-size: $font-size-body;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

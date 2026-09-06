@@ -1,0 +1,314 @@
+@use "../global" as *;
+
+body.page-service {
+
+    // service
+    .service {
+        &-wrap {
+            &__con {
+
+                // タイトル
+                &__ttl {
+                    &__txt {
+                        text-align: center;
+
+                        // タブレット
+                        @include mq(pc) {
+                            width: 100%;
+                        }
+
+                        &__heading {
+
+                            // タブレット
+                            @include mq(pc) {
+                                text-align: center;
+                            }
+
+                            &__subttl {
+                                text-align: center;
+                            }
+                        }
+
+                        &__des {
+                            text-align: center;
+                            font-size: $font-size-body;
+                            margin-top: clamp(0.938rem, 0.824rem + 0.57vw, 1.25rem);
+
+                            span {
+                                color: $sky-blue;
+                            }
+                        }
+                    }
+                }
+
+
+                // サービス一覧
+                &__list {
+
+                    // タブレット
+                    @include mq(pc) {
+                        margin-top: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+                    }
+
+                    &__item {
+                        @include flex;
+                        margin-top: clamp(1.875rem, 1.648rem + 1.14vw, 2.5rem);
+                        width: 90%;
+
+                        // タブレット
+                        @include mq(pc) {
+                            width: 100%;
+                            margin: clamp(1.563rem, 1.403rem + 0.8vw, 2rem) auto 0;
+                        }
+
+                        // 偶数番目は左右を反転
+                        &:nth-child(even) {
+                            flex-direction: row-reverse;
+                            width: 90%;
+                            margin-left: auto;
+
+                            // タブレット
+                            @include mq(pc) {
+                                width: 100%;
+                                margin: clamp(1.563rem, 1.403rem + 0.8vw, 2rem) auto 0;
+                            }
+                        }
+
+                        // タブレット
+                        @include mq(pc) {
+                            flex-direction: column;
+                            gap: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+
+                            // タブレットでは通常の縦並び
+                            &:nth-child(even) {
+                                flex-direction: column;
+                            }
+                        }
+
+
+                        // パネル
+                        &__panel {
+                            width: 50%;
+
+                            // タブレット
+                            @include mq(pc) {
+                                width: 100%;
+                            }
+
+
+                            // パネル上部
+                            &__box {
+                                @include flex-align-center;
+                                gap: clamp(0.5rem, 0.455rem + 0.23vw, 0.625rem);
+
+
+                                // アイコン
+                                &__img {
+                                    width: clamp(2.5rem, 2.045rem + 2.27vw, 3.75rem);
+                                    height: clamp(2.5rem, 2.045rem + 2.27vw, 3.75rem);
+
+                                    img {
+                                        @include img-full;
+                                    }
+                                }
+
+
+                                // 番号
+                                &__num {
+                                    font-size: clamp(2rem, 1.455rem + 2.73vw, 3.5rem);
+                                    color: $color-blue;
+                                    border-right: 1px solid $color-blue;
+                                    padding-right: .5rem;
+                                }
+
+
+                                // タイトル
+                                &__ttl {
+
+                                    &__name {
+                                        font-size: clamp(1.25rem, 1.068rem + 0.91vw, 1.75rem);
+                                        margin-bottom: .4rem;
+                                    }
+
+                                    &__txt {
+                                        font-size: $font-size-body;
+                                        color: $color-blue;
+                                    }
+                                }
+                            }
+
+
+                            // 説明文
+                            &__des {
+                                margin-top: clamp(0.938rem, 0.824rem + 0.57vw, 1.25rem);
+                                font-size: $font-size-body;
+                            }
+
+
+                            // 対応内容
+                            &__support {
+                                margin-top: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+
+
+                                // 対応内容タイトル
+                                &__ttl {
+                                    color: $color-blue;
+                                    font-size: $font-size-body;
+                                    font-weight: 700;
+                                    margin-bottom: .6rem;
+                                }
+
+
+                                // 対応内容一覧
+                                &__list {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: .4rem;
+
+
+                                    // 1段
+                                    &__row {
+                                        display: flex;
+                                        gap: .6rem;
+
+                                        // スマホ
+                                        @include mq(sp) {
+                                            gap: .3rem;
+                                        }
+
+
+                                        // 対応内容項目
+                                        &__item {
+                                            display: inline-block;
+                                            background-color: #0b2948;
+                                            color: $color-white;
+                                            font-size: clamp(0.75rem, 0.705rem + 0.23vw, 0.875rem);
+                                            line-height: 1;
+                                            padding: .3rem .5rem;
+                                            white-space: nowrap;
+
+                                            // スマホ
+                                            @include mq(sp) {
+                                                font-size: .7rem;
+                                                padding: .25rem .35rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+
+                        // メイン画像
+                        &__img {
+                            width: 42.5%;
+
+                            // タブレット
+                            @include mq(pc) {
+                                width: 100%;
+                                height: clamp(17.5rem, 15.909rem + 7.95vw, 21.875rem);
+                            }
+
+                            img {
+                                @include img-full;
+                                border-radius: 20px;
+                                object-fit: cover;
+                                object-position: center 30%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // faq 
+    .faq {
+        &-wrap {
+            &__con {
+                // タイトル
+
+                &__ttl {
+                    text-align: center;
+                    margin-bottom: clamp(1.875rem, 1.648rem + 1.14vw, 2.5rem);
+                }
+                &__list {
+                    &__item {
+                        margin: 0 auto clamp(1rem, 0.795rem + 1.02vw, 1.563rem);
+                        background: $color-gray-light;
+                        border-radius: 5px;
+                        border: 1px solid $color-text-blue-light;
+                        interpolate-size: allow-keywords;
+                        width: 80%;
+
+                        // sp
+                        @include mq(sp) {
+                            width: 100%;
+                        }
+                        &::details-content {
+                            block-size: 0;
+                            opacity: 0;
+                            overflow: hidden;
+                            transition:
+                                block-size .5s ease,
+                                opacity .4s ease,
+                                content-visibility .5s allow-discrete;
+                        }
+
+                        &[open] {
+                            &::details-content {
+                                block-size: auto;
+                                opacity: 1;
+                            }
+
+                            .fa-chevron-down {
+                                transform: rotate(180deg);
+                            }
+                        }
+
+                        &__question {
+                            display: flex;
+                            align-items: center;
+                            gap: .8rem;
+                            padding: 1rem;
+                            cursor: pointer;
+                            font-size: clamp(1rem, 0.909rem + 0.45vw, 1.25rem);
+
+                            &::marker {
+                                display: none;
+                            }
+
+                            &::-webkit-details-marker {
+                                display: none;
+                            }
+
+                            &__q {
+                                display: grid;
+                                place-items: center;
+                                width: 40px;
+                                height: 40px;
+                                flex-shrink: 0;
+                                border-radius: 50%;
+                                background: $color-blue;
+                                color: $color-white;
+                                font-weight: 700;
+                                font-size: clamp(1rem, 0.909rem + 0.45vw, 1.25rem);
+                            }
+
+                            .fa-chevron-down {
+                                margin-left: auto;
+                                color: $color-blue;
+                                transition: transform .5s ease;
+                            }
+                        }
+
+                        &__answer {
+                            padding: 0 1rem 1.2rem 4.2rem;
+                            line-height: 1.8;
+                            font-size: $font-size-body;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

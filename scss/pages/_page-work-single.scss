@@ -1,0 +1,190 @@
+@use "../global" as *;
+
+body.page-work-single {
+  // fv01
+  .fv01 {
+    background-image: url(../img/fv.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);
+
+      &-wrap {
+      padding-left: 5%;
+      padding-right: 5%;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-top: clamp(2.5rem, 2.045rem + 2.27vw, 3.75rem);
+      padding-bottom: clamp(2.5rem, 2.045rem + 2.27vw, 3.75rem);
+      &__con {
+        @include flex;
+        
+        // タブレット 
+        @include mq(pc) {
+          flex-direction: column-reverse;
+        }
+        &__img {
+          width: 47.5%;
+
+          // タブレット
+          @include mq(pc) {
+            width: 80%;
+          }
+          img {
+            @include img-full;
+          }
+        }
+        &__box {
+          display: flex;
+          flex-direction: column;
+          width: 47.5%;
+          color: $color-white;
+          gap: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+
+          // タブレット
+          @include mq(pc) {
+            width: 90%;
+            text-align: center;
+            margin-bottom: clamp(1.875rem, 1.648rem + 1.14vw, 2.5rem);
+            align-items: center;
+
+            // sp
+            @include mq(sp) {
+              width: 100%;
+            }
+          }
+          &__ttl {
+            margin-bottom: .4rem;
+            &__site {
+              background-color: $color-blue;
+              width: fit-content;
+              padding: .3rem;
+              font-size: $font-size-body;
+
+              // タブレット
+            @include mq(pc) {
+              margin-inline: auto;
+            }
+            }
+            &__name {
+              font-size: clamp(1.5rem, 1.227rem + 1.36vw, 2.25rem);
+              font-weight: 500;
+            }
+          }
+          &__catch {
+            &__ttl {
+              font-size: clamp(1.125rem, 0.989rem + 0.68vw, 1.5rem);
+              margin-bottom: .5rem;
+            }
+            &__des {
+              font-size: $font-size-body;
+            }
+          }
+          &__breadcrumb {
+            display: flex;
+            width: fit-content;
+          }
+        }
+      }
+    }
+  }
+  // detail
+
+.detail {
+  &-wrap {
+    &__con {
+
+      &__list {
+        display: flex;
+        padding-block: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+        border-bottom: 1px solid rgba($color-black, 0.2);
+
+        @include mq(pc) {
+          flex-direction: column;
+        }
+
+        &__txt {
+          width: 40%;
+
+          @include mq(pc) {
+            width: 100%;
+          }
+
+          &__subttl {
+            color: $color-blue;
+          }
+
+          &__ttl {
+            font-size: clamp(1.5rem, 1.227rem + 1.36vw, 2.25rem);
+          }
+        }
+
+        &__des {
+          width: 60%;
+
+          @include mq(pc) {
+            width: 100%;
+            margin-top: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+          }
+        }
+
+        dl {
+          display: grid;
+          grid-template-columns: 135px 1fr;
+          width: 60%;
+          margin: 0;
+          border-top: 1px solid rgba($color-black, 0.2);
+          border-left: 1px solid rgba($color-black, 0.2);
+
+          @include mq(pc) {
+            width: 100%;
+            margin-top: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+          }
+
+          dt,
+          dd {
+            margin: 0;
+            padding: 8px 16px;
+            border-right: 1px solid rgba($color-black, 0.2);
+            border-bottom: 1px solid rgba($color-black, 0.2);
+          }
+
+          dt {
+            @include flex-align-center;
+            justify-content: center;
+            background-color: $color-blue;
+            color: $color-white;
+          }
+
+          dd {
+            @include flex-align-center;
+          }
+        }
+      }
+
+      &__btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: fit-content;
+        margin: clamp(2.5rem, 1.591rem + 4.55vw, 5rem) auto 0;
+        padding: 7px 8px 7px 18px;
+        background-color: $color-blue;
+        color: $color-white;
+        border-radius: 9999px;
+
+        &__icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 20px;
+          height: 20px;
+          background-color: $color-white;
+          color: $color-blue;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+}

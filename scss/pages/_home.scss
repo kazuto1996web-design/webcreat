@@ -1,0 +1,615 @@
+@use "../global" as *;
+
+body.home {
+
+    // FV
+    .fv {
+        background-image: url("../img/fv.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        margin-top: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);
+
+        &-wrap {
+            padding-left: 5%;
+            padding-right: 5%;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding-top: clamp(2.5rem, 2.045rem + 2.27vw, 3.75rem);
+            padding-bottom: clamp(2.5rem, 2.045rem + 2.27vw, 3.75rem);
+            &__con {
+                // FV全体の横並び
+                @include flex;
+
+                @include mq(pc) {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+
+                // FVテキスト
+                &__txt {
+                    color: $color-white;
+                    display: flex;
+                    flex-direction: column;
+                    gap: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+
+                    @include mq(pc) {
+                        text-align: center;
+                    }
+
+                    &__name {
+                        font-size: $font-size-body;
+                    }
+
+                    // FVタイトル
+                    &__ttl {
+                        &__lead {
+                            font-size: clamp(1.5rem, 1.182rem + 1.59vw, 2.375rem);
+                        }
+
+                        &__main {
+                            font-size: clamp(1.65rem, 0.977rem + 3.36vw, 3.5rem);
+                        }
+
+                        &__accent {
+                            font-size: clamp(1.65rem, 0.977rem + 3.36vw, 3.5rem);
+                            color: $sky-blue;
+                        }
+
+                        &__bottom {
+                            font-size: clamp(1.25rem, 0.886rem + 1.82vw, 2.25rem);
+                        }
+                    }
+
+                    // FV説明文
+                    &__des {
+                        font-size: $font-size-body;
+                    }
+
+                    // FVボタン
+                    &__btn {
+                        display: flex;
+                        gap: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+
+                        @include mq(tab) {
+                            flex-direction: column;
+                        }
+                    }
+                }
+
+                // FV画像
+                &__img {
+                    width: 47.5%;
+
+                    @include mq(pc) {
+                        width: 70%;
+                    }
+
+                    img {
+                        @include img-full;
+                    }
+                }
+            }
+        }
+    }
+
+
+    // ABOUT
+    .about {
+        &-wrap {
+            &__con {
+                // 画像・テキスト・ボタン配置
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                "img txt"
+                "img btn";
+
+                column-gap: 5rem;
+
+                @include mq(pc) {
+                    column-gap: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+                }
+
+                align-items: center;
+
+                @include mq(pc) {
+                    grid-template-columns: 1fr;
+                    grid-template-areas:
+                    "txt"
+                    "img"
+                    "btn";
+
+                    row-gap: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+                    text-align: center;
+                }
+
+                // ABOUT画像
+                &__img {
+                    grid-area: img;
+
+                    img {
+                        @include img-full;
+                        border-radius: 20px;
+                    }
+                }
+
+                // ABOUTテキスト
+                &__txt {
+                    grid-area: txt;
+
+                    &__des {
+                        margin-top: 2.5rem;
+                        font-size: $font-size-body;
+
+                        @include mq(sp) {
+                            br {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                // ABOUTボタン
+                &__btn {
+                    grid-area: btn;
+                    align-self: start;
+                }
+            }
+        }
+    }
+
+
+    // SERVICE
+    .service {
+        background-image: url("../img/strength.png");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &-wrap {
+            &__con {
+
+                // SERVICEタイトル
+                &__ttl {
+                    &__txt {
+                        @include flex;
+                        margin-bottom: clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem);
+
+                        @include mq(pc) {
+                            flex-direction: column;
+                            text-align: center;
+                        }
+
+                        &__des {
+                            color: $color-white;
+
+                            @include mq(pc) {
+                                margin-top: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+
+                                @include mq(sp) {
+                                    br {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // SERVICE一覧
+                &__list {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    column-gap: 2.5rem;
+                    row-gap: clamp(1.875rem, 1.42rem + 2.27vw, 3.125rem);
+                    margin-bottom: clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem);
+
+                    @include mq(pc) {
+                        grid-template-columns: 1fr;
+                    }
+
+                    // SERVICE各項目
+                    &__item {
+
+                        &:nth-child(even) {
+                            margin-top: 3rem;
+
+                            @include mq(pc) {
+                                margin-top: 0;
+                            }
+                        }
+
+                        a {
+                            display: block;
+
+                            // ホバー時に画像拡大
+                            &:hover {
+                                .service-wrap__con__list__item__box {
+                                    img {
+                                        transform: scale(1.08);
+                                    }
+                                }
+                            }
+                        }
+
+                        // SERVICE画像
+                        &__box {
+                            width: 100%;
+                            position: relative;
+                            overflow: hidden;
+                            border-radius: 20px;
+
+                            // 画像の暗いレイヤー
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                inset: 0;
+                                background: rgba(0, 0, 0, 0.3);
+                                z-index: 1;
+                                border-radius: 20px;
+                            }
+
+                            img {
+                                @include img-full;
+                                border-radius: 20px;
+                                transition: transform 0.5s ease;
+                            }
+
+                            // 画像内テキスト
+                            &__txt {
+                                position: absolute;
+                                inset: 0;
+                                padding-top: 1.5rem;
+                                padding-left: 1rem;
+                                z-index: 2;
+
+                                &__subttl {
+                                    font-size: clamp(1rem, 0.864rem + 0.68vw, 1.375rem);
+                                    color: $color-white;
+                                }
+
+                                &__ttl {
+                                    font-size: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);
+                                    color: $color-white;
+                                }
+                            }
+
+                            // SERVICE矢印
+                            &__arrow {
+                                position: absolute;
+                                right: 30px;
+                                bottom: 30px;
+                                @include flex-center-i;
+                                width: 60px;
+                                height: 60px;
+                                border-radius: 50%;
+                                color: $color-white;
+                                border: 1px solid $color-white;
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+
+                // SERVICEボタン
+                &__btn {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+
+    // WORKS
+    .works {
+        &-wrap {
+            &__con {
+
+                // WORKSタイトル
+                &__ttl {
+                    margin-bottom: clamp(1.875rem, 1.648rem + 1.14vw, 2.5rem);
+
+                    &__txt {
+                        @include flex;
+
+                        @include mq(pc) {
+                            flex-direction: column;
+                            text-align: center;
+                        }
+
+                        &__des {
+                            font-size: $font-size-body;
+
+                            @include mq(pc) {
+                                margin-top: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+
+                                @include mq(sp) {
+                                    br {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // WORKS Swiper
+                &__swiper {
+                    position: relative;
+                    overflow: visible;
+
+                    @include mq(pc) {
+                        overflow: hidden;
+                        padding-bottom: 2.5rem;
+                    }
+
+                    // WORKS一覧
+                    &__list {
+                        margin: 0;
+                        padding: 0;
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 1.87rem;
+                        row-gap: 2.5rem;
+
+                        @include mq(pc) {
+                            display: flex;
+                            gap: 0;
+                            row-gap: 0;
+                        }
+
+                        // WORKS各項目
+                        &__item {
+                            a {
+                                color: $color-black;
+                                display: block;
+                            }
+
+                            // WORKS画像
+                            &__img {
+                                @include mq(pc) {
+                                    width: 85%;
+                                    margin: 0 auto;
+
+                                    @include mq(sp) {
+                                        width: 75%;
+                                    }
+                                }
+
+                                img {
+                                    @include img-full;
+                                }
+                            }
+
+                            // WORKSタイトル
+                            &__ttl {
+                                font-size: clamp(1rem, 0.909rem + 0.45vw, 1.25rem);
+                                margin-top: .8rem;
+                                @include mq(sp) 
+                            }
+
+                            &__name {
+                                margin-top: .8rem;
+                            }
+
+                            &__name,
+                            &__site {
+                                font-size: $font-size-body;
+                            }
+
+                            &__ttl,
+                            &__name,
+                            &__site {
+                                @include mq(pc) {
+                                    padding-left: clamp(2rem, 0.909rem + 5.45vw, 5rem);
+                                    @include mq(sp)  {
+                                        width: 85%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // Swiperページネーション
+                    &__pagination {
+                        display: none;
+
+                        @include mq(pc) {
+                            display: block;
+                        }
+                    }
+
+                    // Swiper矢印
+                    &__prev,
+                    &__next {
+                        display: none;
+
+                        @include mq(pc) {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-color: $color-blue;
+                            color: $color-white;
+                            border: none;
+                            top: 50%;
+                            transform: translateY(-50%);
+
+                            svg {
+                                width: 1rem;
+                                height: 1rem;
+                            }
+
+                            @include mq(sp) {
+                                top: 35%;
+                            }
+                        }
+                    }
+
+                    // 前へ
+                    &__prev {
+                        @include mq(pc) {
+                            left: 10px;
+                        }
+                    }
+
+                    // 次へ
+                    &__next {
+                        @include mq(pc) {
+                            right: 10px;
+                        }
+                    }
+                }
+
+                // WORKSボタン
+                &__btn {
+                    margin-top: clamp(1.875rem, 1.648rem + 1.14vw, 2.5rem);
+                    text-align: center
+                }
+            }
+        }
+    }
+
+
+    // INFO
+    .info {
+        background-color: $color-gray-light;
+
+        &-wrap {
+            &__con {
+                width: 80%;
+                margin: 0 auto;
+
+                @include mq(pc) {
+                    width: 100%;
+                }
+
+                // INFOタイトル
+                &__ttl {
+                    &__txt {
+                        text-align: center;
+                        margin-bottom: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+
+                        &__heading {
+                            margin-bottom: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem); 
+                        }
+                    }
+                }
+
+                // INFO一覧
+                &__list {
+                    margin: 0 auto;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+                        border-top: 1px solid $color-text-blue-light;
+                        border-bottom: 1px solid $color-text-blue-light;
+                        padding: 1rem 0;
+                        color: $color-black;
+
+                        @include mq(pc) {
+                            flex-wrap: wrap;
+                        } 
+                    }
+
+                    // 日付
+                    time {
+                        width: clamp(6.25rem, 4.886rem + 6.82vw, 10rem);
+                    }
+
+                    // BLOG・NEWS共通
+                    &__blog,
+                    &__news {
+                        background-color: $color-blue;
+                        color: $color-white;
+                        width: 80px;
+                        text-align: center;
+                        padding: 5px 10px;
+                    }
+
+                    // BLOG
+                    &__blog {
+                        background-color: $color-blue;
+                    }
+
+                    // NEWS
+                    &__news {
+                        background-color: $color-navy;
+                    }
+
+                    // INFO説明文
+                    &__des {
+                        flex-basis: 100%;
+                    }
+                }
+
+                // INFOボタン
+                &__btn {
+                    margin-top: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+                    text-align: center;
+                    font-size: $font-size-body;
+                }
+            }
+        }
+    }
+
+
+    // COMPANY
+    .company {
+        background-image: url("../img/company.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        // 背景画像の暗いレイヤー
+        &::after {
+            content: "";
+            inset: 0;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        &-wrap {
+            position: relative;
+            z-index: 2;
+
+            &__con {
+                @include mq(pc) {
+                    text-align: center;
+                }
+
+                // COMPANYテキスト
+                &__list {
+                    display: flex;
+                    flex-direction: column;
+                    color: $color-white;
+                    gap: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+                    margin-top: 1rem;
+
+                    &__sub {
+                        font-size: clamp(0.9rem, 0.773rem + 0.64vw, 1.25rem);
+                        font-weight: 500;
+                    }
+
+                    &__des {
+                        font-size: $font-size-body;
+
+                        @include mq(sp) {
+                            br {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

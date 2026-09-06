@@ -1,0 +1,56 @@
+@use "breakpoint" as *;
+@use "../setting" as *;
+
+// flex関係
+@mixin flex-align-center {
+    display: flex;
+    align-items: center;
+}
+// header(fv)・footerのボタン時に使用
+@mixin inline-flex-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+// 各ボタンにある「I」の時に使用
+@mixin flex-center-i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+// breakpoint
+@mixin mq($bp) {
+  @media screen and (max-width: map-get($breakpoint, $bp)) {
+    @content;
+  }
+}
+
+//img
+@mixin img-full {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+// 各テキスト本文
+$font-size-body: clamp(0.813rem, 0.744rem + 0.34vw, 1rem); 
+
+// section title
+$font-size-section-title: clamp(2.2rem, 1.182rem + 5.09vw, 5rem);
+$font-size-section-subtitle: clamp(1.25rem, 0.977rem + 1.36vw, 2rem);
+
+// 下層fv-ttl 
+$fv-ttl: clamp(2.5rem, 2.045rem + 2.27vw, 3.75rem);
+$fv-subttl: clamp(1.5rem, 1.227rem + 1.36vw, 2.25rem);
+
+// 共通の上下余白
+$section-padding: clamp(2.5rem, 1.591rem + 4.55vw, 5rem);
