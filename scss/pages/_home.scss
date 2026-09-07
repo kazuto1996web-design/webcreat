@@ -130,6 +130,9 @@ body.home {
                     img {
                         @include img-full;
                         border-radius: 20px;
+                        object-position: center top;
+                        object-fit: cover;
+                        height: clamp(15.625rem, 11.08rem + 22.73vw, 28.125rem);
                     }
                 }
 
@@ -251,6 +254,9 @@ body.home {
 
                             img {
                                 @include img-full;
+                                object-fit: cover;
+                                object-position: center top;
+                                height: clamp(15.625rem, 13.125rem + 12.5vw, 22.5rem);
                                 border-radius: 20px;
                                 transition: transform 0.5s ease;
                             }

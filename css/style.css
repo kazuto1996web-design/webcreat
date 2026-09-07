@@ -743,7 +743,6 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);
 }
 .top-wrap {
   padding-top: clamp(2.5rem, 2.273rem + 1.14vw, 3.125rem);
@@ -895,6 +894,9 @@ body.home .about-wrap__con__img img {
   height: 100%;
   display: block;
   border-radius: 20px;
+  object-position: center top;
+  object-fit: cover;
+  height: clamp(15.625rem, 11.08rem + 22.73vw, 28.125rem);
 }
 body.home .about-wrap__con__txt {
   grid-area: txt;
@@ -987,6 +989,9 @@ body.home .service-wrap__con__list__item__box img {
   width: 100%;
   height: 100%;
   display: block;
+  object-fit: cover;
+  object-position: center top;
+  height: clamp(15.625rem, 13.125rem + 12.5vw, 22.5rem);
   border-radius: 20px;
   transition: transform 0.5s ease;
 }
